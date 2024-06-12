@@ -1,0 +1,55 @@
+Aplikasi Persediaan Barang (Multimedia, Network, Telepon dan Toner)
+==========================================================================================================================================
+
+Bahasa Pemrograman 	: PHP v.7.0.13
+Database	 		: MySQL
+Extension			: MySQLi Extension
+CSS Framework 		: Bootstrap 
+Template			: AdminLTE v.2.0.4
+Referensi			: Aplikasi Persediaan Obat (link disertakan dibawah)
+Report				: html2pdf_v4.03
+Tools				: - Visual Code, 
+					  - XAMPP 7.0.13,
+
+==========================================================================================================================================
+PETUNJUK PENGGUNAAN
+
+1. Install XAMPP versi 5.6.40, Download disini https://www.apachefriends.org
+2. Setelah XAMPP terinstall, buka Xampp Control Panel lalu Start Apache dan MySQL.
+3. Kemudian copy folder Inventory dan paste ke folder ..\xampp\htdocs.
+5. Kemudian buka browser dan masuk ke localhost/phpmyadmin, buat database baru dengan nama stokbarang.
+6. Import file stokbarang.sql yang ada difolder Database ke dalam database yang telah dibuat.
+7. Setting koneksi pada file database.php yang ada pada folder config (sesuaikan dengan pengaturan server di komputer/laptop Anda)
+8. Untuk membuka program ketikan localhost/inventory.
+
+Catatan Login user (Super Admin/User):
+- Hak akses Super Admin: username admin, password admin
+==========================================================================================================================================
+PEMBERITAHUAN - 01/12/2023
+Terdapat beberapa hal yang harus dilakukan jika ingin *Menambahkan User/Hak Akses* dan *Menambahkan Menu* 
+yang tidak ada di sistem saat ini.
+
+#01. Menambahkan User/Hak Akses
+1. Buka modules/user/form.php
+2. Silahkan tambahkan secara manual pada bagian Hak Akses.
+3. Kemudian untuk mengatur Hak Akses Menu silahkan buka sidebar-menu.php
+4. Scroll kebawah hingga menemukan komentar Sidebar Beda User.
+5. Silahkan kostumisasi sesuai kebutuhan Hak Akses yang ditambahkan.
+
+#02. Menambahkan Menu
+1. Buka content.php
+2. Silahkan kostumisasi menu baru yang ingin ditampilkan dengan prosedur include.
+3. Untuk memunculkan menu tersebut di sidebar silahkan buka sidebar-menu.php
+4. Sesuaikan menu yang ingin dimunculkan ada pada Hak Akses User.
+Contoh: Jika menu baru Ubah Password ingin dimunculkan di Hak Akses Super Admin,
+maka cukup kostumisasi pada bagian Super Admin
+==========================================================================================================================================
+Saran pengembangan sistem:
+- Menggabungkan combo box di setiap fitur inputan data barang dengan tujuan mempermudah user menginput data tanpa harus dibedakan antara
+ fitur tersebut. Contohnya seperti fitur input data barang multimedia tidak hanya bisa ketik namun juga bisa dropdown list.
+- Memanfaatkan API dalam pengelolaan data lebih baik.
+- Memperbaharui sistem dari semula PHP Native menjadi Framework agar website lebih dinamis dan mudah di maintenance.
+==========================================================================================================================================
+Referensi: Aplikasi Persediaan Stok Obat (https://github.com/indrasatya/aplikasi-persediaan-stok)
+Extract file dan ubah nama folder menjadi Aplikasi-Persediaan-stok.
+Sumber demo : www.indrasatya.com
