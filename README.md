@@ -19,3 +19,6 @@ Halaman untuk mencetak laporan stok masuk (Multimedia/Network/Telepon/Toner). La
 Halaman untuk mencetak laporan stok keluar (Multimedia/Network/Telepon/Toner). Laporan dapat dicetak per hari, per minggu, per bulan dan per tahun dalam format PDF.
 7. Manajemen User,
 Halaman untuk mengolah data user yang dapat menggunakan aplikasi.
+
+# Project ini dibuat untuk memenuhi tugas mata kuliah Kerja Praktik.
+Project ini mengunakan metode ATM (Amati, Tiru, dan Modifikasi) dari beberapa project yang menginspirasi. Segala hal didalam ini adalah gabungan dari inspirasi project ybs dan saya.
